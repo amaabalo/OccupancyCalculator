@@ -1,0 +1,356 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.amiabalo.occupancycalculator.DataFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        android:id="@+id/tableLayout">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_column="1"
+                android:padding="3dip"
+                android:text="@string/threads_per_warp" />
+
+            <TextView
+                android:id="@+id/threads_per_warp"
+                android:gravity="right"
+                android:padding="3dip" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_column="1"
+                android:padding="3dip"
+                android:text="@string/max_warps_per_multiprocessor" />
+
+            <TextView
+                android:id="@+id/max_warps_per_multiprocessor"
+                android:gravity="right"
+                android:padding="3dip" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_column="1"
+                android:padding="3dip"
+                android:text="@string/max_blocks_per_multiprocessor" />
+
+            <TextView
+                android:id="@+id/max_blocks_per_multiprocessor"
+                android:gravity="right"
+                android:padding="3dip" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_column="1"
+                android:padding="3dip"
+                android:text="@string/max_threads_per_multiprocessor" />
+
+            <TextView
+                android:id="@+id/max_threads_per_multiprocessor"
+                android:gravity="right"
+                android:padding="3dip" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_column="1"
+                android:padding="3dip"
+                android:text="@string/max_threads_per_block" />
+
+            <TextView
+                android:id="@+id/max_threads_per_block"
+                android:gravity="right"
+                android:padding="3dip" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_column="1"
+                android:padding="3dip"
+                android:text="@string/max_registers_per_multiprocessor" />
+
+            <TextView
+                android:id="@+id/max_registers_per_multiprocessor"
+                android:gravity="right"
+                android:padding="3dip" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_column="1"
+                android:padding="3dip"
+                android:text="@string/max_registers_per_block" />
+
+            <TextView
+                android:id="@+id/max_registers_per_block"
+                android:gravity="right"
+                android:padding="3dip" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_column="1"
+                android:padding="3dip"
+                android:text="@string/max_registers_per_thread" />
+
+            <TextView
+                android:id="@+id/max_registers_per_thread"
+                android:gravity="right"
+                android:padding="3dip" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_column="1"
+                android:padding="3dip"
+                android:text="@string/shared_memory_per_multiprocessor" />
+
+            <TextView
+                android:id="@+id/shared_memory_per_multiprocessor"
+                android:gravity="right"
+                android:padding="3dip" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_column="1"
+                android:padding="3dip"
+                android:text="@string/max_shared_memory_per_block" />
+
+            <TextView
+                android:id="@+id/max_shared_memory_per_block"
+                android:gravity="right"
+                android:padding="3dip" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_column="1"
+                android:padding="3dip"
+                android:text="@string/register_allocation_unit_size" />
+
+            <TextView
+                android:id="@+id/register_allocation_unit_size"
+                android:gravity="right"
+                android:padding="3dip" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_column="1"
+                android:padding="3dip"
+                android:text="@string/register_allocation_granularity" />
+
+            <TextView
+                android:id="@+id/register_allocation_granularity"
+                android:gravity="right"
+                android:padding="3dip" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_column="1"
+                android:padding="3dip"
+                android:text="@string/shared_memory_allocation_unit_size" />
+
+            <TextView
+                android:id="@+id/shared_memory_allocation_unit_size"
+                android:gravity="right"
+                android:padding="3dip" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_column="1"
+                android:padding="3dip"
+                android:text="@string/warp_allocation_granularity" />
+
+            <TextView
+                android:id="@+id/warp_allocation_granularity"
+                android:gravity="right"
+                android:padding="3dip" />
+
+        </TableRow>
+    </TableLayout>
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:stretchColumns="3"
+        android:layout_below="@+id/tableLayout"
+        android:layout_alignParentStart="true">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_column="1"
+                android:padding="3dip"
+                android:text="@string/allocated_resources" />
+
+            <TextView
+                android:layout_column="2"
+                android:padding="3dip"
+                android:text="@string/per_block" />
+
+            <TextView
+                android:layout_column="3"
+                android:padding="3dip"
+                android:text="@string/limit_per_sm" />
+
+            <TextView
+                android:layout_column="4"
+                android:padding="3dip"
+                android:text="@string/allocatable_blocks" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_column="1"
+                android:padding="3dip"
+                android:text="@string/allocated_warps_label" />
+
+            <TextView
+                android:layout_column="2"
+                android:padding="3dip"
+                android:id="@+id/warps_per_block"/>
+
+            <TextView
+                android:layout_column="3"
+                android:padding="3dip"
+                android:id="@+id/warp_limit_per_sm"/>
+
+            <TextView
+                android:layout_column="4"
+                android:padding="3dip"
+                android:id="@+id/allocatable_blocks_by_warps"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_column="1"
+                android:padding="3dip"
+                android:text="@string/allocated_registers_label" />
+
+            <TextView
+                android:layout_column="2"
+                android:padding="3dip"
+                android:id="@+id/registers_per_block"/>
+
+            <TextView
+                android:layout_column="3"
+                android:padding="3dip"
+                android:id="@+id/register_limit_per_sm"/>
+
+            <TextView
+                android:layout_column="4"
+                android:padding="3dip"
+                android:id="@+id/allocatable_blocks_by_registers"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_column="1"
+                android:padding="3dip"
+                android:text="@string/allocated_shared_memory_label" />
+
+            <TextView
+                android:layout_column="2"
+                android:padding="3dip"
+                android:id="@+id/shared_memory_per_block"/>
+
+            <TextView
+                android:layout_column="3"
+                android:padding="3dip"
+                android:id="@+id/shared_memory_limit_per_sm"/>
+
+            <TextView
+                android:layout_column="4"
+                android:padding="3dip"
+                android:id="@+id/allocatable_blocks_by_shared_memory"/>
+
+        </TableRow>
+
+
+    </TableLayout>
+
+</RelativeLayout>

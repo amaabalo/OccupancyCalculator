@@ -1,0 +1,324 @@
+<resources>
+    <string name="app_name">Occupancy Calculator</string>
+
+    <string name="configure">Configuration</string>
+    <string name="graphs">Graphs</string>
+    <string name="data">Data</string>
+
+    <string name="device_properties">Your Device Properties</string>
+    <string name="resource_usage">Your Resource Usage</string>
+    <string name="compute_capability_label">Compute Capability</string>
+    <string name="shared_memory_label">Shared Memory Size (bytes)</string>
+    <string name="caching_mode_label">Global Load Caching Mode</string>
+    <string name="threads_per_block_label">Threads Per Block</string>
+    <string name="registers_per_thread_label">Registers Per Thread</string>
+    <string name="shared_memory_per_block_label">Shared Memory per Block (bytes)</string>
+    <string name="l1plusl2">L1 + L2 (ca)</string>
+    <string name="calculate">Calculate</string>
+
+    <string name="threads_per_warp">Threads per Warp</string>
+    <string name="max_warps_per_multiprocessor">Max Warps per Multiprocessor</string>
+    <string name="max_blocks_per_multiprocessor">Max Thread Blocks per Multiprocessor</string>
+    <string name="max_threads_per_multiprocessor">Max Threads per Multiprocessor</string>
+    <string name="max_threads_per_block">Maximum Thread Block Size</string>
+    <string name="max_registers_per_multiprocessor">Registers per Multiprocessor</string>
+    <string name="max_registers_per_block">Max Registers per Thread Block</string>
+    <string name="max_registers_per_thread">Max Registers per Thread</string>
+    <string name="shared_memory_per_multiprocessor">Shared Memory per Multiprocessor (bytes)</string>
+    <string name="max_shared_memory_per_block">Max Shared Memory per Block</string>
+    <string name="register_allocation_unit_size">Register allocation unit size</string>
+    <string name="register_allocation_granularity">Register allocation granularity</string>
+    <string name="shared_memory_allocation_unit_size">Shared Memory allocation unit size</string>
+    <string name="warp_allocation_granularity">Warp allocation granularity</string>
+
+    <string name="allocated_resources">Allocated\nResources</string>
+    <string name="per_block">Per Block</string>
+    <string name="limit_per_sm">Limit Per \nSM</string>
+    <string name="allocatable_blocks">Allocatable \nBlocks \nPer SM</string>
+    <string name="allocated_warps_label">Warps</string>
+    <string name="allocated_registers_label">Registers</string>
+    <string name="allocated_shared_memory_label">Shared Memory\n(Bytes)</string>
+
+    <string name="block_size_title">Impact of Varying Block Size</string>
+    <string name="shared_memory_title">Impact of Varying Shared Memory per Block</string>
+    <string name="register_usage_title">Impact of Varying Register Count per Thread</string>
+    <string name="occupancy_y_axis_label">Multiprocessor Warp Occupancy\n(#Warps)</string>
+    <string name="block_size_x_axis_label">Threads per Block</string>
+    <string name="shared_memory_x_axis_label">Shared Memory per Block</string>
+    <string name="register_usage_x_axis_label">Registers per Thread</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="caching_mode_array">
+        <item>L2 only (cg)</item>
+        <item>L1 + L2 (ca)</item>
+    </string-array>
+
+    <string-array name="compute_capabilities_array">
+        <item>2.0</item>
+        <item>2.1</item>
+        <item>3.0</item>
+        <item>3.2</item>
+        <item>3.5</item>
+        <item>3.7</item>
+        <item>5.0</item>
+        <item>5.2</item>
+        <item>5.3</item>
+        <item>6.0</item>
+        <item>6.1</item>
+        <item>6.2</item>
+    </string-array>
+
+    <string-array name="cc_20_array">
+        <item>sm_20</item>
+        <item>32</item>
+        <item>48</item>
+        <item>1536</item>
+        <item>8</item>
+        <item>49152</item>
+        <item>49152</item>
+        <item>32768</item>
+        <item>32768</item>
+        <item>64</item>
+        <item>warp</item>
+        <item>63</item>
+        <item>128</item>
+        <item>2</item>
+        <item>1024</item>
+        <item>2</item>
+        <item>49152</item>
+        <item>16384</item>
+    </string-array>
+
+    <string-array name="cc_21_array">
+        <item>sm_21</item>
+        <item>32</item>
+        <item>48</item>
+        <item>1536</item>
+        <item>8</item>
+        <item>49152</item>
+        <item>49152</item>
+        <item>32768</item>
+        <item>32768</item>
+        <item>64</item>
+        <item>warp</item>
+        <item>63</item>
+        <item>128</item>
+        <item>2</item>
+        <item>1024</item>
+        <item>2</item>
+        <item>49152</item>
+        <item>16384</item>
+    </string-array>
+
+    <string-array name="cc_30_array">
+        <item>sm_30</item>
+        <item>32</item>
+        <item>64</item>
+        <item>2048</item>
+        <item>16</item>
+        <item>49152</item>
+        <item>49152</item>
+        <item>65536</item>
+        <item>65536</item>
+        <item>256</item>
+        <item>warp</item>
+        <item>63</item>
+        <item>256</item>
+        <item>4</item>
+        <item>1024</item>
+        <item>3</item>
+        <item>49152</item>
+        <item>32768</item>
+        <item>16384</item>
+    </string-array>
+
+    <string-array name="cc_32_array">
+        <item>	sm_32	</item>
+        <item>	32	</item>
+        <item>	64	</item>
+        <item>	2048	</item>
+        <item>	16	</item>
+        <item>	49152	</item>
+        <item>	49152	</item>
+        <item>	65536	</item>
+        <item>	65536	</item>
+        <item>	256	</item>
+        <item>	warp	</item>
+        <item>	255	</item>
+        <item>	256	</item>
+        <item>	4	</item>
+        <item>	1024	</item>
+        <item>	3	</item>
+        <item>	49152	</item>
+        <item>	32768	</item>
+        <item>	16384	</item>
+    </string-array>
+
+    <string-array name="cc_35_array">
+        <item>	sm_35	</item>
+        <item>	32	</item>
+        <item>	64	</item>
+        <item>	2048	</item>
+        <item>	16	</item>
+        <item>	49152	</item>
+        <item>	49152	</item>
+        <item>	65536	</item>
+        <item>	65536	</item>
+        <item>	256	</item>
+        <item>	warp	</item>
+        <item>	255	</item>
+        <item>	256	</item>
+        <item>	4	</item>
+        <item>	1024	</item>
+        <item>	3	</item>
+        <item>	49152	</item>
+        <item>	32768	</item>
+        <item>	16384	</item>
+    </string-array>
+
+    <string-array name="cc_37_array">
+        <item>sm_37</item>
+        <item>32</item>
+        <item>64</item>
+        <item>2048</item>
+        <item>16</item>
+        <item>114688</item>
+        <item>49152</item>
+        <item>131072</item>
+        <item>65536</item>
+        <item>256</item>
+        <item>warp</item>
+        <item>255</item>
+        <item>256</item>
+        <item>4</item>
+        <item>1024</item>
+        <item>3</item>
+        <item>114688</item>
+        <item>98304</item>
+        <item>81920</item>
+    </string-array>
+
+    <string-array name="cc_50_array">
+        <item>	sm_50	</item>
+        <item>	32	</item>
+        <item>	64	</item>
+        <item>	2048	</item>
+        <item>	32	</item>
+        <item>	65536	</item>
+        <item>	49152	</item>
+        <item>	65536	</item>
+        <item>	65536	</item>
+        <item>  256	 </item>
+        <item>	warp	</item>
+        <item>	255	</item>
+        <item>	256	</item>
+        <item>	4	</item>
+        <item>	1024	</item>
+        <item>	1	</item>
+        <item>	65536	</item>
+    </string-array>
+
+    <string-array name="cc_52_array">
+        <item>sm_52</item>
+        <item>32</item>
+        <item>64</item>
+        <item>2048</item>
+        <item>32</item>
+        <item>98304</item>
+        <item>49152</item>
+        <item>65536</item>
+        <item>65536</item>
+        <item>256</item>
+        <item>warp</item>
+        <item>255</item>
+        <item>256</item>
+        <item>4</item>
+        <item>1024</item>
+        <item>1</item>
+        <item>98304</item>
+    </string-array>
+
+    <string-array name="cc_53_array">
+        <item>sm_53</item>
+        <item>32</item>
+        <item>64</item>
+        <item>2048</item>
+        <item>32</item>
+        <item>65536</item>
+        <item>49152</item>
+        <item>65536</item>
+        <item>32768</item>
+        <item>256</item>
+        <item>warp</item>
+        <item>255</item>
+        <item>256</item>
+        <item>4</item>
+        <item>1024</item>
+        <item>1</item>
+        <item>65536</item>
+    </string-array>
+
+    <string-array name="cc_60_array">
+        <item>sm_60</item>
+        <item>32</item>
+        <item>64</item>
+        <item>2048</item>
+        <item>32</item>
+        <item>65536</item>
+        <item>49152</item>
+        <item>65536</item>
+        <item>65536</item>
+        <item>256</item>
+        <item>warp</item>
+        <item>255</item>
+        <item>256</item>
+        <item>2</item>
+        <item>1024</item>
+        <item>1</item>
+        <item>65536</item>
+    </string-array>
+
+    <string-array name="cc_61_array">
+        <item>sm_61</item>
+        <item>32</item>
+        <item>64</item>
+        <item>2048</item>
+        <item>32</item>
+        <item>98304</item>
+        <item>49152</item>
+        <item>65536</item>
+        <item>65536</item>
+        <item>256</item>
+        <item>warp</item>
+        <item>255</item>
+        <item>256</item>
+        <item>4</item>
+        <item>1024</item>
+        <item>1</item>
+        <item>98304</item>
+    </string-array>
+
+    <string-array name="cc_62_array">
+        <item>sm_62</item>
+        <item>32</item>
+        <item>128</item>
+        <item>4096</item>
+        <item>32</item>
+        <item>65536</item>
+        <item>49152</item>
+        <item>65536</item>
+        <item>65536</item>
+        <item>256</item>
+        <item>warp</item>
+        <item>255</item>
+        <item>256</item>
+        <item>4</item>
+        <item>1024</item>
+        <item>1</item>
+        <item>65536</item>
+    </string-array>
+
+</resources>
